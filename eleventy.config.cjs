@@ -7,9 +7,9 @@ module.exports = (config) => {
         dir: {
             input: "src",
             output: "docs",
-            // Use nunjucks
-            markdownTemplateEngine: "njk",
-		    htmlTemplateEngine: "njk"
-        }
+        },
+        // Use nunjucks
+        markdownTemplateEngine: "njk",
+        htmlTemplateEngine: "njk"
     }
 }
