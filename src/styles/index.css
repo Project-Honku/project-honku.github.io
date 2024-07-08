@@ -13,6 +13,14 @@ html, body {
     transform: translateY(-100%);
 }
 
+.text-color-primary {
+    color: rgba(181, 53, 53, .9);
+}
+
+.bg-color-primary {
+    background: rgba(181, 53, 53, .9);
+}
+
 .left h1 {
     font-size: calc(2.5rem + 1.5vw);
     margin-bottom: 1rem;
@@ -35,6 +43,25 @@ html, body {
     animation: spinner 10s infinite linear;
     top: 0;
     right: 0;
+}
+
+/* Products Box */
+.product {
+    height: 180px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.product h5 {
+    margin: 0;
+}
+
+.product hr {
+    margin: 0.3rem 0;
+}
+
+.product:hover {
+    transform: scale(1.03);
 }
 
 @keyframes rotatePlane {
