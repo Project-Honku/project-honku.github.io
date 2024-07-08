@@ -5,15 +5,14 @@
     }
 
     // Changing blobs over time
-    const blobs = document.querySelector("#blobs");
-    const blobsChilds = blobs.children;
+    const blobs = document.querySelectorAll(".faded");
     let blobTimer = setInterval(changeBlob, 1000 * 10);
     
     // Choose random blob at start
-    let blobPos = Math.floor(Math.random() * blobsChilds.length);
-    blobsChilds[blobPos].classList.add("show");
+    let blobPos = Math.floor(Math.random() * blobs.length);
+    blobs[blobPos].classList.add("show");
 
-    blobs.onclick = () => {
+    blobs[0].parentElement.onclick = () => {
         clearInterval(blobTimer);
         blobTimer = setInterval(changeBlob, 1000 * 10);
         changeBlob();
@@ -21,13 +20,13 @@
 
     function changeBlob() {
         blobPos++;
-        if (blobPos < blobsChilds.length) {
-            blobsChilds[blobPos].classList.add("show");
-            blobsChilds[blobPos - 1].classList.remove("show");
+        if (blobPos < blobs.length) {
+            blobs[blobPos].classList.add("show");
+            blobs[blobPos - 1].classList.remove("show");
         } else {
-            blobsChilds[blobPos - 1].classList.remove("show");
+            blobs[blobPos - 1].classList.remove("show");
             blobPos = 0;
-            blobsChilds[blobPos].classList.add("show");
+            blobs[blobPos].classList.add("show");
         }
     }
 })();
