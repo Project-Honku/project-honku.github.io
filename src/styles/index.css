@@ -30,6 +30,13 @@ html, body {
     opacity: 1;
 }
 
+.plus {
+    font-size: 3em;
+    animation: spinner 10s infinite linear;
+    top: 0;
+    right: 0;
+}
+
 @keyframes rotatePlane {
     0% {
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
@@ -41,5 +48,15 @@ html, body {
 
     100% {
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
