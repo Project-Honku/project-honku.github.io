@@ -18,6 +18,20 @@
         changeBlob();
     };
 
+    // FAQ sections
+    const collapseable = document.querySelectorAll(".collapse");
+    [...collapseable].forEach(collapseEl => {
+        const plus = collapseEl.parentElement.querySelector(".faq-plus");
+
+        collapseEl.addEventListener('show.bs.collapse', event => {
+            plus.classList.replace("bi-plus", "bi-dash");
+        });
+
+        collapseEl.addEventListener('hide.bs.collapse', event => {
+            plus.classList.replace("bi-dash", "bi-plus");
+        });
+    });
+
     function changeBlob() {
         blobPos++;
         if (blobPos < blobs.length) {
