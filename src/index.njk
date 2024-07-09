@@ -15,8 +15,8 @@ title: Project Honku
     <title>{{ title }}</title>
 </head>
 <body class="bg-light">
-    <div id="loading" class="loaded h-100 w-100 bg-black position-fixed top-0 start-0 d-flex justify-content-center align-items-center z-3">
-        <img src="public/img/logo.webp" alt="Logo" width="150" style="animation: rotatePlane 1.2s infinite alternate ease-in-out;">
+    <div id="loading" class="h-100 w-100 bg-black position-fixed top-0 start-0 d-flex justify-content-center align-items-center z-3">
+        <img src="public/img/logo.webp" alt="Logo" width="80" style="animation: rotatePlane 1.2s infinite alternate ease-in-out;">
     </div>
 
     <header class="w-100 h-100 text-white position-relative overflow-hidden bg-color-primary mb-5">
@@ -62,48 +62,43 @@ title: Project Honku
         <div id="team" class="container mb-5 pb-5 text-center">
             <h3 class="fw-bold mb-4"><span class="text-color-primary">Temui tim</span> kami!</h3>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gx-0 gx-sm-2 gy-2 text-start justify-content-center">
-                <div class="col">
-                    <div class="team bg-white shadow rounded p-2 d-flex">
-                        <img class="border border-2 rounded-circle me-3" src="public/img/teams/aozora.webp" alt="Aozora" height="100%">
-                        <div class="info pt-1 h-100 d-flex flex-column justify-content-center">
-                            <h5 class="mb-0">Aozora</h5>
-                            <small class="opacity-75">Founder, EN Translator</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="team bg-white shadow rounded p-2 d-flex">
-                        <img class="border border-2 rounded-circle me-3" src="public/img/teams/fiky.webp" alt="Fiky" height="100%">
-                        <div class="info pt-1 h-100 d-flex flex-column justify-content-center">
-                            <h5 class="mb-0">Fiky</h5>
-                            <small class="opacity-75">EN Translator</small>
-                        </div>
-                    </div>
-                </div>
+                {% include "teams.njk" %}
             </div>
             <div class="w-100 mt-3 small opacity-50 text-start text-sm-center">
                 * Seluruh foto tim dibuat menggunakan Picrew.me oleh kreator 吉田君 dan mematuhi lisensi penggunaan
             </div>
         </div>
 
-        <div class="bg-black text-white w-100 overflow-hidden">
-            <div id="eksplisit" class="container pt-5 pb-5 position-relative text-center text-sm-start">
+        <div class="bg-black text-white w-100 mb-5 overflow-hidden">
+            <div id="eksplisit" class="container pt-5 pb-5 position-relative">
                 <h2 class="fw-bold mb-3">Terkait Konten Eksplisit</h2>
                 <p class="mb-0">
                     Kami hanya menerjemahkan visual novel dengan rating family-friendly atau visual novel yang memiliki versi sensor (biasanya versi Steam).
                     <br>
                     Kami tidak akan menejermahkan visual novel yang menampilkan scene pornografi secara eksplisit seperti eroge.
                     <br><br>
-                    Misi kami adalah untuk memudahkan akses visual novel bagi seluruh warga Indonesia sambil tetap berusaha (namun tidak secara kesuluruhan) mematuhi <u>Undang-Undang Republik Indonesia Nomor 44 Tahun 2008 tentang Pornografi.</u>
+                    Misi kami adalah untuk memudahkan akses visual novel bagi seluruh warga Indonesia sambil tetap berusaha mematuhi <u>Undang-Undang Republik Indonesia Nomor 44 Tahun 2008 tentang Pornografi.</u>
+                    <br>
+                    Namun, kami mentoleransi beberapa visual novel yang mengandung sindiran seksual yang masih dapat diterima berdasarkan hasil keputusan tim kami.
                 </p>
 
                 <span class="position-absolute bottom-0 end-0 lh-1" style="font-size: 15rem; opacity: 15%;">18+</span>
             </div>
         </div>
 
-        
+        <div id="faq" class="container mb-5 text-center">
+            <h3 class="fw-bold mb-4"><span class="text-color-primary">Pertanyaan yang</span> sering ditanyakan</h3>
+            <div class="row row-cols-1 gy-4">
+                {% include "faq.njk" %}
+            </div>
+        </div>
     </main>
+
+    <footer class="border-top text-white bg-color-primary text-center p-4">
+        <img src="public/img/logo.webp" alt="Project Honku" width="60">
+        <br>
+        © 2024 Project Honku
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="scripts/index.js"></script>
