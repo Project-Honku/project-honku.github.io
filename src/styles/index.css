@@ -64,6 +64,17 @@ html, body {
     transform: scale(1.03);
 }
 
+.team {
+    height: 100px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #eksplisit p {
+        width: 65%;
+    }
+}
+
 @keyframes rotatePlane {
     0% {
         transform: perspective(120px) rotateX(0deg) rotateY(0deg);

@@ -1,0 +1,51 @@
+<div class="col">
+    <div class="product shadow rounded bg-white overflow-hidden d-flex w-100">
+        <img class="rounded" src="{{ product.data.image }}" alt="{{ product.data.title }}" height="100%">
+        <a class="p-2 w-100 text-decoration-none text-black" href="#">
+            <h5>{{ product.data.title }}</h5>
+            <hr>
+            
+            <div class="small">
+                <span>Bahasa: </span>
+                {%- for bahasa in product.data.language -%}
+                    <span class="badge text-bg-dark">{{ bahasa }}</span>
+                    <span></span>
+                {%- endfor -%}
+                <br>
+
+                <span>Mesin: </span>
+                <span class="badge text-bg-dark">{{ product.data.engine }}</span>
+                <br>
+
+                <span>Rating: </span>
+                    {%- if product.data.rating >= 18 -%}
+                        <span class="badge text-bg-danger">{{ product.data.rating }}+</span>
+                    {%- elif product.data.rating >= 14 -%}
+                        <span class="badge text-bg-warning">
+                            {{ product.data.rating }}+
+                            {%- if product.data.censored -%}
+                                &nbsp;(Versi Sensor)
+                            {%- endif -%}
+                        </span>
+                    {%- elif product.data.rating >= 10 -%}
+                        <span class="badge text-bg-info">{{ product.data.rating }}+</span>
+                    {%- else -%}
+                        <span class="badge text-bg-success">SU</span>
+                    {%- endif -%}
+                <br>
+
+                <span>Status: </span>
+                {%- switch product.data.status -%}
+                    {%- case 0 -%}
+                        <span class="badge text-bg-dark">Planned</span>
+                    {%- case 1 -%}
+                        <span class="badge text-bg-info">In Progress</span>
+                    {%- case 2 -%}
+                        <span class="badge text-bg-success">Released</span>
+                    {%- default -%}
+                        <span class="badge text-bg-dark">Planned</span>
+                {% endswitch %}
+            </div>
+        </a>
+    </div>
+</div>
