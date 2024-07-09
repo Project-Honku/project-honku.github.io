@@ -25,12 +25,19 @@
 
         collapseEl.addEventListener('show.bs.collapse', event => {
             plus.classList.replace("bi-plus", "bi-dash");
+            collapseAnother(event.target.id);
         });
 
         collapseEl.addEventListener('hide.bs.collapse', event => {
             plus.classList.replace("bi-dash", "bi-plus");
+            collapseAnother(event.target.id);
         });
     });
+
+    function collapseAnother(exceptID) {
+        const collapseable = document.querySelector(`[id]:not(#${exceptID}).collapse.show`);
+        if (collapseable) new bootstrap.Collapse(collapseable, { hide: true });
+    }
 
     function changeBlob() {
         blobPos++;
