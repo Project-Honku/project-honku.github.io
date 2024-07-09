@@ -1,5 +1,8 @@
 ---
 title: Project Honku
+description: Kami menerjemahkan visual novel karena kami gabut
+image: public/img/logo.webp
+url: https://honku.aozora.my.id/
 ---
 
 <html lang="en">
@@ -12,7 +15,23 @@ title: Project Honku
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/index.css">
 
+    <!-- Primary Meta Tags -->
     <title>{{ title }}</title>
+    <meta name="title" content="{{ title }}" />
+    <meta name="description" content="{{ description }}" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:image" content="{{ image }}" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:url" content="{{ url }}" />
+    <meta property="twitter:title" content="{{ title }}" />
+    <meta property="twitter:description" content="{{ description }}" />
+    <meta property="twitter:image" content="{{ image }}" />
 </head>
 <body class="bg-light">
     <div id="loading" class="h-100 w-100 bg-black position-fixed top-0 start-0 d-flex justify-content-center align-items-center z-3">
@@ -94,10 +113,14 @@ title: Project Honku
         </div>
     </main>
 
-    <footer class="border-top text-white bg-color-primary text-center p-4">
+    <footer class="text-white bg-color-primary text-center p-4">
         <img src="public/img/logo.webp" alt="Project Honku" width="60">
         <br>
-        © 2024 Project Honku
+        <b>Project Honku</b> merupakan organisasi nirlaba.
+        <br>
+        Setiap aset VN adalah milik dari perusahaan masing-masing.
+        <br><br>
+        <a href="/fair-use">Penggunaan Wajar</a> | <a href="/privacy-policy">Kebijakan Privasi</a> | <a href="mailto:honku@aozora.my.id">Kontak Kami</a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

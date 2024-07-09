@@ -5,6 +5,11 @@ html, body {
     font-family: "Poppins", sans-serif;
 }
 
+footer a {
+    text-decoration: underline;
+    color: #fff;
+}
+
 #loading {
     transition: 1s;
 }
