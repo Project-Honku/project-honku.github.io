@@ -10,11 +10,21 @@ footer a {
     color: #fff;
 }
 
-#loading {
+.loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
     transition: 1s;
+    height: 100%;
+    width: 100%;
+    background: #000;
 }
 
-#loading.loaded {
+.loading.loaded {
     transform: translateY(-100%);
 }
 
@@ -24,6 +34,12 @@ footer a {
 
 .bg-color-primary {
     background: rgba(181, 53, 53, .9);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .left h1 {
