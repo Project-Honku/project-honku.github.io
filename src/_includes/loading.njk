@@ -1,0 +1,9 @@
+<div class="loading">
+    <img src="/public/img/logo.webp" alt="Logo" width="80" style="animation: moreSpinner 1.8s infinite ease-in-out;">
+</div>
+<script>
+    window.onload = () => {
+        const loading = document.querySelector(".loading");
+        setTimeout(() => loading.classList.add("loaded"), 1000);
+    }
+</script>
