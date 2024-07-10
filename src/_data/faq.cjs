@@ -10,7 +10,7 @@ module.exports = [{
 },
 {
     q: `Maksud "Status" dan "Mesin" pada informasi proyek kalian itu apa?`,
-    a: `"Status" adalah status dari visual novel yang sedang diterjemahkan tim kami. Berikut penjelasannya:
+    a: `"Status" adalah status dari visual novel yang diterjemahkan tim kami. Berikut penjelasannya:
         <ul>
             <li><span class="badge text-bg-dark">Planned</span> yang berarti visual novel tersebut direncanakan akan diterjemahkan.</li>
             <li><span class="badge text-bg-info">In Progress</span> yang berarti visual novel tersebut sedang dalam proses penerjemahan.</li>
