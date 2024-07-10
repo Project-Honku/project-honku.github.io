@@ -1,6 +1,6 @@
 (() => {
     window.onload = () => {
-        const loading = document.querySelector("#loading");
+        const loading = document.querySelector(".loading");
         setTimeout(() => loading.classList.add("loaded"), 1000);
     }
 
