@@ -36,6 +36,8 @@
 
                 <span>Status: </span>
                 {%- switch product.data.status -%}
+                    {%- case -1 -%}
+                        <span class="badge text-bg-danger">Dropped</span>
                     {%- case 0 -%}
                         <span class="badge text-bg-dark">Planned</span>
                     {%- case 1 -%}
