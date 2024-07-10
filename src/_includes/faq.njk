@@ -1,67 +1,12 @@
+{%- for item in faq -%}
 <div class="col border-bottom">
     <button class="d-flex justify-content-between align-items-center bg-transparent border-0 w-100 p-0"
-    type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
-        <h5 class="text-start mb-3">Terkait peringatan diatas, memangnya kenapa gak mau?</h5>
+    type="button" data-bs-toggle="collapse" data-bs-target="#faq{{ loop.index }}" aria-expanded="false" aria-controls="faq{{ loop.index }}">
+        <h5 class="text-start mb-3">{{ item.q }}</h5>
         <i class="h4 bi bi-plus faq-plus"></i>
     </button>
-    <div id="faq1" class="collapse text-start">
-        Yah dosa lah...
+    <div id="faq{{ loop.index }}" class="collapse text-start">
+        {{ item.a | safe }}
     </div>
 </div>
-
-<div class="col border-bottom">
-    <button class="d-flex justify-content-between align-items-center bg-transparent border-0 w-100 p-0"
-    type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-        <h5 class="text-start mb-3">Berapa lama waktu yang dibutuhkan tim untuk menerjemahkan satu visual novel?</h5>
-        <i class="h4 bi bi-plus faq-plus"></i>
-    </button>
-    <div id="faq2" class="collapse text-start">
-        Tergantung niat dan waktu luang tim kami. Bisa saja berbulan-bulan atau bertahun-tahun.
-    </div>
-</div>
-
-<div class="col border-bottom">
-    <button class="d-flex justify-content-between align-items-center bg-transparent border-0 w-100 p-0"
-    type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-        <h5 class="text-start mb-3">Bagaimana cara aku mengetahui sampai dimana progress [nama visual novel] sedang diterjemahkan?</h5>
-        <i class="h4 bi bi-plus faq-plus"></i>
-    </button>
-    <div id="faq3" class="collapse text-start">
-        Kadang (tapi tidak jarang) setiap bulan, kami memposting detail progress kerja tim kami di blog Project Honku.
-        <br>
-        Blog nya lagi dikerjakan sih, btw. 
-    </div>
-</div>
-
-<div class="col border-bottom">
-    <button class="d-flex justify-content-between align-items-center bg-transparent border-0 w-100 p-0"
-    type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-        <h5 class="text-start mb-3">Maksud "Status" dan "Mesin" pada informasi proyek kalian itu apa?</h5>
-        <i class="h4 bi bi-plus faq-plus"></i>
-    </button>
-    <div id="faq4" class="collapse text-start">
-        "Status" adalah status dari visual novel yang sedang diterjemahkan tim kami. Berikut penjelasannya:
-        <ul>
-            <li><span class="badge text-bg-dark">Planned</span> yang berarti visual novel tersebut direncanakan akan diterjemahkan.</li>
-            <li><span class="badge text-bg-info">In Progress</span> yang berarti visual novel tersebut sedang dalam proses penerjemahan.</li>
-            <li><span class="badge text-bg-success">Released</span> yang berarti terjemahan kami telah dirilis untuk publik dan dapat digunakan oleh mereka yang memiliki game originalnya.</li>
-            <li><span class="badge text-bg-danger">Dropped</span> yang berarti terjemahan kami telah dihapus. Biasanya karena masalah DMCA atau permintaan dari developer visual novel tersebut.</li>
-        </ul>
-        Sedangkan "Mesin" adalah jenis dari mesin permainan (game engine) yang digunakan oleh visual novel tersebut.
-        <br>
-        Contohnya seperti Ren'Py yang biasanya digunakan oleh visual novel barat dan Kirikiri yang biasanya digunakan oleh visual novel Jepang. 
-    </div>
-</div>
-
-<div class="col border-bottom">
-    <button class="d-flex justify-content-between align-items-center bg-transparent border-0 w-100 p-0"
-    type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
-        <h5 class="text-start mb-3">Aku ingin [nama visual novel] diterjemahkan. Boleh request gak?</h5>
-        <i class="h4 bi bi-plus faq-plus"></i>
-    </button>
-    <div id="faq5" class="collapse text-start">
-        Boleh banget!
-        <br>
-        Kami sedang mengerjakan formulir request buat kalian yang pengen visual novel kesukaannya diterjemahkan oleh kami.
-    </div>
-</div>
+{%- endfor -%}

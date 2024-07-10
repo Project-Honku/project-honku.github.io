@@ -1,9 +1,4 @@
 (() => {
-    window.onload = () => {
-        const loading = document.querySelector(".loading");
-        setTimeout(() => loading.classList.add("loaded"), 1000);
-    }
-
     // Changing blobs over time
     const blobs = document.querySelectorAll(".faded");
     let blobTimer = setInterval(changeBlob, 1000 * 10);

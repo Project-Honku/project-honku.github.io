@@ -1,4 +1,5 @@
 const markdownIt = require("markdown-it");
+const fs = require("fs");
 
 module.exports = (config) => {
     const markdown = markdownIt({ html: true, linkify: true });
@@ -9,6 +10,11 @@ module.exports = (config) => {
 	config.addPassthroughCopy("src/scripts");
 
     config.addPassthroughCopy("src/CNAME");
+
+    // Blobs image
+    config.addGlobalData("blobs", () => {
+        return fs.readdirSync("src/public/img/blobs");
+    });
 
     return {
         dir: {
