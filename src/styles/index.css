@@ -10,21 +10,35 @@ footer a {
     color: #fff;
 }
 
-.loading {
+.loading-back, .loading-mid, .loading-front {
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
     left: 0;
-    z-index: 100;
     transition: 1s;
     height: 100%;
     width: 100%;
-    background: #000;
 }
 
-.loading.loaded {
+.loading-front {
+    background: #000;
+    z-index: 103;
+}
+
+.loading-mid {
+    background: #fff;
+    z-index: 102;
+}
+
+.loading-back {
+    background: #c04c4c;
+    border-bottom: 3px solid #fff;
+    z-index: 101;
+}
+
+.loaded {
     transform: translateY(-100%);
 }
 
