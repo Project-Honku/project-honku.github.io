@@ -11,7 +11,7 @@ Project Honku sangat menghargai privasi penggunanya.
 Halaman ini akan menjelaskan bagaimana kami menangani informasi anda ketika anda mengunjungi website kami.
 
 #### 1. Informasi yang Kami Kumpulkan
-Kami ingin anda mengetahui bahwa **Kami tidak akan pernah mengumpulkan informasi pribadi anda**.
+Kami ingin anda mengetahui bahwa **kami tidak akan pernah mengumpulkan informasi pribadi anda**.
 Ini mencakup website kami maupun patch yang kami sediakan.
 Informasi pribadi seperti nama, email, IP Address, atau data lainnya tidak akan dikumpulkan dan disimpan oleh kami.
 
@@ -41,7 +41,7 @@ Project Honku highly values the privacy of its users.
 This page will explain how we handle your information when you visit our website.
 
 #### 1. Information We Collect
-We want you to know that **We will never collect your personal information**.
+We want you to know that **we will never collect your personal information**.
 This includes both our website and the patches we provide.
 Personal information such as name, email, IP Address, or other data will not be collected and stored by us.
 
