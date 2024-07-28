@@ -47,6 +47,7 @@ baseURL: https://honku.aozora.my.id
     <meta property="twitter:image" content="{{ baseURL + "/" + image }}" />
 </head>
 <body class="bg-light">
+    {% if not pageTitle %}
     <div class="loading loading-front">
         <img src="/public/img/logo.webp" alt="Logo" width="80" style="animation: moreSpinner 1.8s infinite ease-in-out;">
     </div>
@@ -67,6 +68,7 @@ baseURL: https://honku.aozora.my.id
             return new Promise(resolve => setTimeout(resolve, 70));
         }
     </script>
+    {% endif %}
 
     {{ content | safe }}
 </body>
