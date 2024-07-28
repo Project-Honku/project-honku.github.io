@@ -53,15 +53,14 @@ baseURL: https://honku.aozora.my.id
     <div class="loading loading-mid"></div>
     <div class="loading loading-back"></div>
     <script>
-        window.onload = () => {
+        window.onload = async () => {
             const loadings = document.querySelectorAll(".loading");
-            setTimeout(async () => {
-                loadings[0].classList.add("loaded");
-                await delay()
-                loadings[1].classList.add("loaded");
-                await delay()
-                loadings[2].classList.add("loaded");
-            }, 1000);
+
+            loadings[0].classList.add("loaded");
+            await delay()
+            loadings[1].classList.add("loaded");
+            await delay()
+            loadings[2].classList.add("loaded");
         }
     
         function delay() {
