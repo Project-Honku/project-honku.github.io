@@ -8,3 +8,20 @@ a {
     padding: 1rem;
     margin: 0 auto;
 }
+
+.blog-box {
+    background: #fff;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+}
+
+.blog-box a {
+    text-decoration: none;
+}
+
+.blog-box a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,20 @@
+---
+layout: page.njk
+pageTitle: Blog
+---
+
+{% for post in collections.blog %}
+<div class="blog-box shadow-sm rounded">
+    <small class="writer">{{ post.data.writer }}</small>
+    <small class="opacity-75 mb-3 date">{{post.date.getDate()}}-{{post.date.getMonth() + 1}}-{{post.date.getFullYear()}}</small>
+    <a href="{{post.url}}">
+        <h4 class="title">{{post.data.pageTitle}}</h4>
+    </a>
+    <p class="m-0 summary">
+        {{post.data.pageDescription}}
+    </p>
+    <div class="text-end mt-3">
+        <a href="{{post.url}}" class="text-color-primary">Lanjutkan membaca &gt;</a>
+    </div>
+</div>
+{% endfor %}
