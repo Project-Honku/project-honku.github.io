@@ -3,9 +3,12 @@ layout: head.njk
 ---
 
 <div class="bg-color-primary text-white text-center">
-    <div class="container d-flex justify-content-center align-items-center position-relative" style="padding: 5rem 0;">
-        <h1 class="m-0 fw-bold">{{ pageTitle }}</h1>
-        <a href="/"><i class="bi bi-arrow-left position-absolute top-0 start-0 m-2 fs-2 lh-1 text-white"></i></a>
+    <div class="page-container d-flex flex-column justify-content-center align-items-center position-relative" style="padding: 5rem 0;">
+        <h1 class="mb-3 fw-bold">{{ pageTitle }}</h1>
+        {% if pageDescription %}
+            <span>{{ pageDescription }}</span>
+        {% endif %}
+        <a href="/{%- if date -%}blog{% endif %}"><i class="bi bi-arrow-left position-absolute top-0 start-0 m-2 fs-2 lh-1 text-white"></i></a>
     </div>
 </div>
 
