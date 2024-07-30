@@ -3,15 +3,19 @@ layout: head.njk
 ---
 
 <div class="bg-color-primary text-white text-center">
-    <div class="page-container d-flex flex-column justify-content-center align-items-center position-relative" style="padding: 5rem 0;">
-        <h1 class="mb-3 fw-bold">{{ pageTitle }}</h1>
+    <div class="page-container d-flex flex-column justify-content-center align-items-center position-relative" style="padding: 5rem 1rem;">
         {% if pageDescription %}
+            <h1 class="mb-3 fw-bold">{{ pageTitle }}</h1>
             <span>{{ pageDescription }}</span>
+        {% else %}
+            <h1 class="mb-0 fw-bold">{{ pageTitle }}</h1>
         {% endif %}
-        <a href="/{%- if date -%}blog{% endif %}"><i class="bi bi-arrow-left position-absolute top-0 start-0 m-2 fs-2 lh-1 text-white"></i></a>
+        <i class="bi bi-arrow-left position-absolute top-0 start-0 m-2 fs-2 lh-1 text-white" style="cursor: pointer;" onclick="window.history.back()"></i>
     </div>
 </div>
 
-<div class="page-container">
+<div class="page-container" style="min-height: 50%;">
     {{ content | safe }}
 </div>
+
+{% include "footer.njk" %}
