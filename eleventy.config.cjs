@@ -16,6 +16,12 @@ module.exports = (config) => {
         return fs.readdirSync("src/public/img/blobs");
     });
 
+    // Filters
+    config.addFilter("resolveMonth", (month) => {
+        const months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+        return months[month];
+    });
+
     return {
         dir: {
             input: "src",
