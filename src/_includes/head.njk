@@ -6,6 +6,15 @@ baseURL: https://honku.aozora.my.id
 ---
 
 {% set url = baseURL + page.url %}
+
+{% set outDescription %}
+    {%- if pageDescription -%}
+        {{ pageDescription }}
+    {%- else -%}
+        {{ description }}
+    {%- endif -%}
+{% endset %}
+
 {% set outTitle %}
     {%- if pageTitle -%}
         {{ pageTitle + " | " + title }}
@@ -31,19 +40,19 @@ baseURL: https://honku.aozora.my.id
     <!-- Primary Meta Tags -->
     <title>{{ outTitle }}</title>
     <meta name="title" content="{{ outTitle }}" />
-    <meta name="description" content="{{ description }}" />
+    <meta name="description" content="{{ outDescription }}" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url }}" />
     <meta property="og:title" content="{{ outTitle }}" />
-    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:description" content="{{ outDescription }}" />
     <meta property="og:image" content="{{ baseURL + "/" + image }}" />
 
     <!-- Twitter -->
     <meta property="twitter:url" content="{{ url }}" />
     <meta property="twitter:title" content="{{ outTitle }}" />
-    <meta property="twitter:description" content="{{ description }}" />
+    <meta property="twitter:description" content="{{ outDescription }}" />
     <meta property="twitter:image" content="{{ baseURL + "/" + image }}" />
 </head>
 <body class="bg-light">
