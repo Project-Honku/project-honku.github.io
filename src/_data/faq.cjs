@@ -4,9 +4,7 @@ module.exports = [{
 },
 {
     q: "Cara agar aku bisa tahu progress [nama visual novel] sedang diterjemahkan gimana yah?",
-    a: `Kadang (tapi tidak jarang) setiap bulan, kami memposting detail progress kerja tim kami di blog Project Honku.
-        <br>
-        Blog nya lagi dikerjakan sih, btw.`
+    a: `Kadang (tapi tidak jarang) setiap bulan, kami memposting detail progress kerja tim kami di blog Project Honku.`
 },
 {
     q: `Maksud "Status" di informasi proyek itu apa yah?`,
