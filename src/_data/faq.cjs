@@ -9,7 +9,7 @@ module.exports = [{
         Blog nya lagi dikerjakan sih, btw.`
 },
 {
-    q: `Maksud "Status" dan "Mesin" di informasi proyek itu apa yah?`,
+    q: `Maksud "Status" di informasi proyek itu apa yah?`,
     a: `"Status" itu adalah status dari visual novel yang diterjemahkan tim kami. Berikut penjelasannya:
         <ul>
             <li><span class="badge text-bg-dark">Planned</span> yang berarti visual novel tersebut direncanakan akan diterjemahkan.</li>
@@ -17,10 +17,7 @@ module.exports = [{
             <li><span class="badge text-bg-warning">Released (Partial)</span> yang berarti terjemahan kami telah dirilis untuk publik tetapi sebagian dialog masih belum diterjemahkan.</li>
             <li><span class="badge text-bg-success">Released</span> yang berarti terjemahan kami telah dirilis untuk publik dan dapat digunakan oleh mereka yang memiliki game originalnya.</li>
             <li><span class="badge text-bg-danger">Dropped</span> yang berarti terjemahan kami telah dihapus. Biasanya karena masalah DMCA atau permintaan dari pihak terkait.</li>
-        </ul>
-        Sedangkan "Mesin" adalah jenis dari mesin permainan (game engine) yang digunakan oleh visual novel terkait.
-        <br>
-        Contohnya seperti Ren'Py yang biasanya digunakan oleh visual novel barat dan Kirikiri yang biasanya digunakan oleh visual novel Jepang.`
+        </ul>`
 },
 {
     q: "Aku pengen [nama visual novel] diterjemahkan. Boleh request gak?",

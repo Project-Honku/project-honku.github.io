@@ -3,6 +3,7 @@
         <img class="rounded" src="{{ product.data.image }}" alt="{{ product.data.title }}" height="100%">
         <a class="p-2 w-100 text-decoration-none text-black" href="#">
             <h5>{{ product.data.title }}</h5>
+            <span class="badge text-white bg-color-primary">{{ product.data.developer }}</span>
             <hr>
             
             <div class="small">
@@ -11,10 +12,6 @@
                     <span class="badge text-bg-dark">{{ bahasa }}</span>
                     <span></span>
                 {%- endfor -%}
-                <br>
-
-                <span>Mesin: </span>
-                <span class="badge text-bg-dark">{{ product.data.engine }}</span>
                 <br>
 
                 <span>Rating: </span>
