@@ -22,6 +22,10 @@ module.exports = (config) => {
         return months[month];
     });
 
+    config.addFilter("sortByDate", (posts) => {
+        return posts.slice().sort((a, b) =>  b.date - a.date);
+    });
+
     return {
         dir: {
             input: "src",

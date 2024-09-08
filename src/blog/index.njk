@@ -3,7 +3,7 @@ layout: page.njk
 pageTitle: Blog
 ---
 
-{% for post in collections.blog %}
+{% for post in collections.blog | sortByDate %}
 <div class="blog-box shadow-sm rounded">
     <small class="writer">Ditulis oleh: {{ post.data.writer }}</small>
     <small class="opacity-75 mb-3 date">{{post.date.getDate()}} {{post.date.getMonth() | resolveMonth}} {{post.date.getFullYear()}}</small>
