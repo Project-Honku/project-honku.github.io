@@ -50,6 +50,10 @@ footer a {
     background: rgba(181, 53, 53, .9);
 }
 
+.border-color-primary {
+    border-color: rgba(181, 53, 53, .9) !important;
+}
+
 .left {
     display: flex;
     flex-direction: column;

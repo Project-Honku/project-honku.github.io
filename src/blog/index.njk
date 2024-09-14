@@ -5,8 +5,10 @@ pageTitle: Blog
 
 {% for post in collections.blog | sortByDate %}
 <div class="blog-box shadow-sm rounded">
-    <small class="writer">Ditulis oleh: {{ post.data.writer }}</small>
-    <small class="opacity-75 mb-3 date">{{post.date.getDate()}} {{post.date.getMonth() | resolveMonth}} {{post.date.getFullYear()}}</small>
+    <div class="d-flex flex-column mb-3 border-start border-5 ps-2 border-color-primary">
+        <small class="writer">Ditulis oleh: {{ post.data.writer }}</small>
+        <small class="opacity-75 date">{{post.date.getDate()}} {{post.date.getMonth() | resolveMonth}} {{post.date.getFullYear()}}</small>
+    </div>
     <a href="{{post.url}}">
         <h4 class="title">{{post.data.pageTitle}}</h4>
     </a>
