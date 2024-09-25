@@ -10,9 +10,9 @@ module.exports = [{
     q: `Maksud "Status" di informasi proyek itu apa yah?`,
     a: `"Status" itu adalah status dari visual novel yang diterjemahkan tim kami. Berikut penjelasannya:
         <ul>
-            <li><span class="badge text-bg-dark">Planned</span> yang berarti visual novel tersebut direncanakan akan diterjemahkan.</li>
-            <li><span class="badge text-bg-info">In Progress</span> yang berarti visual novel tersebut sedang dalam proses penerjemahan.</li>
-            <li><span class="badge text-bg-warning">Released (Partial)</span> yang berarti terjemahan kami telah dirilis untuk publik tetapi sebagian dialog masih belum diterjemahkan.</li>
+            <li><span class="badge text-bg-dark">Planned</span> yang berarti visual novel direncanakan akan diterjemahkan.</li>
+            <li><span class="badge text-bg-info">In Progress</span> yang berarti visual novel sedang dalam proses penerjemahan.</li>
+            <li><span class="badge text-bg-warning">On Hold</span> yang berarti proses penerjemahan visual novel sedang dihentikan sementara. Biasanya karena tim sedang memprioritaskan visual novel lain.</li>
             <li><span class="badge text-bg-success">Released</span> yang berarti terjemahan kami telah dirilis untuk publik dan dapat digunakan oleh mereka yang memiliki game originalnya.</li>
             <li><span class="badge text-bg-danger">Dropped</span> yang berarti terjemahan kami telah dihapus. Biasanya karena masalah DMCA atau permintaan dari pihak terkait.</li>
         </ul>`
