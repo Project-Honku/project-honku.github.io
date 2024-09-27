@@ -9,6 +9,7 @@ module.exports = (config) => {
     config.addPassthroughCopy("src/styles");
 	config.addPassthroughCopy("src/scripts");
 
+    config.addPassthroughCopy("src/blog/**/*.{png,webp}")
     config.addPassthroughCopy("src/CNAME");
 
     // Blobs image
