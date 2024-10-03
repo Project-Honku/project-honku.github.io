@@ -1,4 +1,6 @@
 (() => {
+    new LazyLoad();
+
     // Changing blobs over time
     const blobs = document.querySelectorAll(".faded");
     let blobTimer = setInterval(changeBlob, 1000 * 10);

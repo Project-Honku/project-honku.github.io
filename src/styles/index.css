@@ -38,7 +38,7 @@ footer a {
     z-index: 101;
 }
 
-.loaded {
+.loading-loaded {
     transform: translateY(-100%);
 }
 
@@ -106,6 +106,10 @@ footer a {
 .team {
     height: 100px;
     width: 100%;
+}
+
+.lazy {
+    transition: 1s;
 }
 
 @media (min-width: 768px) {
