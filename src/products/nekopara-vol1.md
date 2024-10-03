@@ -1,6 +1,6 @@
 ---
 tags: products
-image: public/img/banners/nekopara-vol1.webp
+code: nekopara-vol1
 title: NEKOPARA Vol. 1
 language: ["🇯🇵", "🇺🇸", "🇨🇳"]
 developer: NEKO WORKs

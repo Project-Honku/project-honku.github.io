@@ -13,10 +13,8 @@ module.exports = (config) => {
     config.addWatchTarget("src/blog/**/*");
     config.addPassthroughCopy("src/CNAME");
 
-    // Blobs image
-    config.addGlobalData("blobs", () => {
-        return fs.readdirSync("src/public/img/blobs");
-    });
+    // Global Data
+    config.addGlobalData("cdn", "https://cdn-honku.aozora.my.id");
 
     // Filters
     config.addFilter("resolveMonth", (month) => {

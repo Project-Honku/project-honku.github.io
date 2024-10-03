@@ -1,6 +1,6 @@
 ---
 tags: products
-image: public/img/banners/sugarsweet.webp
+code: sst
 title: Sugar Sweet Temptation
 language: ["🇯🇵", "🇺🇸"]
 developer: Recette

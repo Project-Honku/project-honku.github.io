@@ -1,6 +1,6 @@
 ---
 tags: products
-image: public/img/banners/ddlc.webp
+code: ddlc
 title: Doki Doki Literature Club
 language: ["🇺🇸"]
 developer: Team Salvato

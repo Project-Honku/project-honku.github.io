@@ -16,12 +16,12 @@ layout: head.njk
             </div>
             <div class="col-12 col-md-5 ps-md-5 d-flex align-items-center">
                 <div id="blobs" class="position-relative">
-                    {%- for blob in blobs -%}
+                    {%- for product in collections.products -%}
                         {%- if loop.index0 == 0 -%}
                             <!-- One element must not absolute to fix blob position problem -->
-                            <img class="faded" src="public/img/blobs/{{ blob }}" alt="Blob" width="100%" height="auto">
+                            <img class="faded" src="{{ cdn }}/img/blobs/{{ product.data.code }}.webp" alt="Blob" width="100%" height="auto">
                         {%- else -%}
-                            <img class="faded position-absolute start-0" src="public/img/blobs/{{ blob }}" alt="Blob" width="100%" height="auto">
+                            <img class="faded position-absolute start-0" src="{{ cdn }}/img/blobs/{{ product.data.code }}.webp" alt="Blob" width="100%" height="auto">
                         {%- endif -%}
                     {%- endfor -%}
 

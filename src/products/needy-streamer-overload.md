@@ -1,6 +1,6 @@
 ---
 tags: products
-image: public/img/banners/needystreameroverload.webp
+code: nso
 title: Needy Streamer Overload
 language: ["🇯🇵", "🇺🇸", "+8"]
 developer: Xemono
