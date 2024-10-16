@@ -14,7 +14,7 @@ module.exports = (config) => {
     config.addPassthroughCopy("src/CNAME");
 
     // Global Data
-    config.addGlobalData("cdn", "https://cdn-honku.aozora.my.id");
+    config.addGlobalData("cdn", "https://cdn.honku.my.id");
 
     // Filters
     config.addFilter("resolveMonth", (month) => {
