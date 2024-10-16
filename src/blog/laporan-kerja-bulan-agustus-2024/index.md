@@ -20,5 +20,5 @@ Tim kita aja belum ada yang tamatin loh termasuk saya. Jadi itulah mengapa...
 
 #### Kebutuhan tim baru
 Kami butuh tambahan sukarelawan! Tim kami kecil, sangaaaat kecil, dua orang lah kalau mau lebih spesifik.
-Jadi jika anda berminat untuk membantu tim kecil kami untuk memperluas visual novel ke Indonesia, anda bisa email kami ke [honku@aozora.my.id](mailto:honku@aozora.my.id). \
+Jadi jika anda berminat untuk membantu tim kecil kami untuk memperluas visual novel ke Indonesia, anda bisa email kami ke [honku@aozora.my.id](mailto:email@honku.my.id). \
 Yuk gabung bersama kami! Siapa tahu organisasi ini bisa jadi PT wkwkwk.
