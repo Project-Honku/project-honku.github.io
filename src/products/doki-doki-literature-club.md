@@ -4,6 +4,6 @@ code: ddlc
 title: Doki Doki Literature Club
 language: ["🇺🇸"]
 developer: Team Salvato
-rating: 17
+rating: 18
 status: 0
 ---

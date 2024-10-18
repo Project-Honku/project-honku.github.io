@@ -4,6 +4,7 @@ code: sst
 title: Sugar Sweet Temptation
 language: ["🇯🇵", "🇺🇸"]
 developer: Recette
-rating: 15
+censored: true
+rating: 0
 status: 1
 ---

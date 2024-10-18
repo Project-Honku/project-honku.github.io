@@ -2,43 +2,34 @@
 layout: head.njk
 ---
 
-<header class="w-100 h-100 text-white position-relative overflow-hidden bg-color-primary mb-5">
-    <div class="container h-100 d-md-flex">
-        <div class="row">
-            <div class="col-12 col-md-7 pe-md-5 gy-5 gy-md-0">
-                <div class="left justify-content-md-center text-md-start">
-                    <h1>こんにちは!</h1>
-                    <p class="m-0">
-                        Selamat datang di <b>Project Honku</b>, sebuah organisasi kecil yang berspesialis dalam menerjemahkan
-                        visual novel dengan misi untuk memperluas visual novel ke Indonesia dan meningkatkan minat baca bagi pemainnya.
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 col-md-5 ps-md-5 d-flex align-items-center">
-                <div id="blobs" class="position-relative">
-                    {%- for product in collections.products -%}
-                        {%- if loop.index0 == 0 -%}
-                            <!-- One element must not absolute to fix blob position problem -->
-                            <img class="faded" src="{{ cdn }}/img/blobs/{{ product.data.code }}.webp" alt="Blob" width="100%" height="auto">
-                        {%- else -%}
-                            <img class="faded position-absolute start-0" src="{{ cdn }}/img/blobs/{{ product.data.code }}.webp" alt="Blob" width="100%" height="auto">
-                        {%- endif -%}
-                    {%- endfor -%}
+{% include "navbar.njk" %}
 
-                    <i class="plus bi bi-plus position-absolute"></i>
-                </div>
-            </div>
+<header class="container-xxl mt-4">
+    <div id="carousel" class="carousel slide container" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-4 shadow-sm border">
+            <a href="{% gotoPro 'needy-streamer-overload' %}" class="carousel-item active position-relative top-placeholder-background">
+                <small class="position-absolute bottom-0 start-0 text-white rounded-top-end p-1 opacity-75 bg-black" style="font-size: 1vw;">©WSS playground</small>
+                <img src="/public/img/top-placeholder.webp" data-src="{{ cdn }}/img/top-banners/1.webp" alt="Needy Streamer Overload" class="d-block w-100 lazy">
+            </a>
+            <a href="{% gotoPro 'sugar-sweet-temptation' %}" class="carousel-item position-relative top-placeholder-background">
+                <small class="position-absolute bottom-0 start-0 text-white rounded-top-end p-1 opacity-75 bg-black" style="font-size: 1vw;">©Recette</small>
+                <img src="/public/img/top-placeholder.webp" data-src="{{ cdn }}/img/top-banners/2.webp" alt="Sugar Sweet Temptation" class="d-block w-100 lazy">
+            </a>
         </div>
-    </div>
-
-    <div class="position-absolute w-100 bottom-0 start-0 d-flex justify-content-center pb-2">
-        <i class="bi bi-chevron-down fs-4"></i>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
     </div>
 </header>
 
-<main>
-    <div id="products" class="container mb-5 pb-5 text-center">
-        <h3 class="fw-bold mb-4"><span class="text-color-primary">Proyek-proyek</span> kami!</h3>
+<main class="container-xxl">
+    <div id="products" class="container mb-5 mt-5 text-center">
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-md-3 gy-3 text-start">
             {%- for product in collections.products | sort(attribute="data.status", reverse=true) -%}
                 {% include "product-box.njk" %}
@@ -46,7 +37,23 @@ layout: head.njk
         </div>
     </div>
 
-    <div id="team" class="container mb-5 pb-5 text-center">
+    <div id="eksplisit" class="container p-4 position-relative bg-black text-white rounded-4 mb-5">
+        <h2 class="fw-bold mb-3">Terkait Konten Seksual dan Versi Sensor</h2>
+        <p class="mb-0">
+            <b>Kami tidak akan dan tidak akan pernah menerjemahkan eroge atau visual novel yang menampilkan adegan seksual secara eksplisit.</b>
+            <br><br>
+            Project Honku memiliki misi untuk memperluas visual novel di Indonesia sambil tetap berusaha mematuhi <a href="https://peraturan.bpk.go.id/Download/29322/UU%20Nomor%2044%20Tahun%202008.pdf" class="text-white">Undang-Undang Republik Indonesia Nomor 44 Tahun 2008 tentang Pornografi</a>.
+            <br>
+            Namun, beberapa visual novel, khususnya versi sensor (biasanya Steam), mungkin masih melanggar undang-undang terkait karena makna "Pornografi" juga mencakup sindiran seksual.
+            <br><br>
+            Oleh karena itu, kami biasanya mengevaluasi visual novel yang akan diterjemahkan untuk menentukan apakah jumlah sindiran masih dapat ditoleransi.
+            Jika masih diluar batas toleransi tapi masih dipaksakan untuk diterjemahkan, terkadang kami melakukan sensor tambahan.
+        </p>
+
+        <span class="position-absolute bottom-0 end-0 lh-1" style="font-size: 15rem; opacity: 15%;">18+</span>
+    </div>
+
+    <!--div id="team" class="container mb-5 pb-3 text-center">
         <h3 class="fw-bold mb-4"><span class="text-color-primary">Temui tim</span> kami!</h3>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gx-0 gx-sm-2 gy-2 text-start justify-content-center">
             {% include "teams.njk" %}
@@ -54,24 +61,7 @@ layout: head.njk
         <div class="w-100 mt-3 small text-start text-sm-center" style="opacity: 67%;">
             * Seluruh foto tim dibuat menggunakan Picrew.me oleh kreator 吉田君 dan mematuhi lisensi penggunaan
         </div>
-    </div>
-
-    <div class="bg-black text-white w-100 mb-5 overflow-hidden">
-        <div id="eksplisit" class="container pt-5 pb-5 position-relative">
-            <h2 class="fw-bold mb-3">Terkait Konten Seksual dan Versi Sensor</h2>
-            <p class="mb-0">
-                <b>Kami tidak akan dan tidak akan pernah menerjemahkan eroge atau visual novel yang menampilkan adegan seksual secara eksplisit.</b>
-                <br><br>
-                Project Honku memiliki misi untuk memperluas visual novel bagi seluruh penggemar VN di Indonesia sambil tetap berusaha mematuhi <a href="https://peraturan.bpk.go.id/Download/29322/UU%20Nomor%2044%20Tahun%202008.pdf" class="text-white">Undang-Undang Republik Indonesia Nomor 44 Tahun 2008 tentang Pornografi</a>.
-                <br>
-                Namun, beberapa visual novel, khususnya versi sensor (visual novel dewasa yang dihapus bagian eksplisitnya), mungkin melanggar undang-undang terkait karena makna "Pornografi" juga mencakup <b>sindiran seksual</b>.
-                <br><br>
-                Oleh karena itu, kami selalu memeriksa visual novel yang akan diterjemahkan dan mengevaluasi apakah jumlah sindiran dapat ditoleransi berdasarkan hasil diskusi tim kami.
-            </p>
-
-            <span class="position-absolute bottom-0 end-0 lh-1" style="font-size: 15rem; opacity: 15%;">18+</span>
-        </div>
-    </div>
+    </div-->
 
     <div id="faq" class="container mb-5 text-center">
         <h3 class="fw-bold mb-4"><span class="text-color-primary">Pertanyaan yang</span> sering ditanyakan</h3>

@@ -16,6 +16,8 @@ module.exports = (config) => {
     // Global Data
     config.addGlobalData("cdn", "https://cdn.honku.my.id");
 
+    config.addShortcode("gotoPro", (product) => "/products/" + product);
+
     // Filters
     config.addFilter("resolveMonth", (month) => {
         const months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];

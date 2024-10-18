@@ -6,8 +6,8 @@ pageTitle: Penggunaan Wajar
 
 Di **Project Honku**, kami bersemangat untuk membuat novel visual lebih mudah diakses. Kami percaya bahwa apa yang kami lakukan telah tunduk pada Fair Use (Penggunaan Wajar), dan inilah alasannya:
 - **Nirlaba**: Terjemahan kami adalah murni proyek sukarela. Kami melakukan ini bukan untuk mendapatkan keuntungan semata. Semua yang kami lakukan adalah gratis dan dibuat oleh para sukarelawan yang hanya ingin membantu lebih banyak orang untuk menikmati visual novel.
-- **Memberi kehidupan baru**: Dengan menerjemahkan novel visual, kami membantu orang-orang untuk menikmati visual novel dengan bahasa yang berbeda. Kami tidak hanya menyalin karya aslinya, kami memungkinkan lebih banyak orang untuk menikmati konten yang sama dengan cara yang belum pernah ada sebelumnya.
-- **Tetap sederhana**: Kami hanya menerjemahkan teksnya saja dan tidak ada yang lain. Seni, musik, dan elemen-elemen lainnya tetap tidak tersentuh karena kami menghormati karya pencipta aslinya.
+- **Memberi Kehidupan Baru**: Dengan menerjemahkan novel visual, kami membantu orang-orang untuk menikmati visual novel dengan bahasa yang berbeda. Kami tidak hanya menyalin karya aslinya, kami memungkinkan lebih banyak orang untuk menikmati konten yang sama dengan cara yang belum pernah ada sebelumnya.
+- **Tetap Sederhana**: Kami hanya menerjemahkan teksnya saja dan tidak ada yang lain. Seni, musik, dan elemen-elemen lainnya tetap tidak tersentuh karena kami menghormati karya pencipta aslinya.
 - **Tidak Merugikan Pasar**: Patch kami dibuat untuk orang-orang yang sudah memiliki game aslinya. Kami tidak berusaha mengganti game atau mengurangi penjualannya melainkan hanya memberikan pilihan kepada para penggemar untuk merasakannya dalam bahasa lain.
 
 Kami menghormati para kreator dan ingin memastikan bahwa karya mereka dihargai oleh sebanyak mungkin orang tanpa memengaruhi pasar aslinya.

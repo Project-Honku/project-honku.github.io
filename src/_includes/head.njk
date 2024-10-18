@@ -56,29 +56,6 @@ baseURL: https://honku.aozora.my.id
     <meta property="twitter:image" content="{{ baseURL + "/" + image }}" />
 </head>
 <body class="bg-light">
-    {% if not pageTitle %}
-    <div class="loading loading-front">
-        <img src="/public/img/logo.webp" alt="Logo" width="80" style="animation: moreSpinner 1.8s infinite ease-in-out;">
-    </div>
-    <div class="loading loading-mid"></div>
-    <div class="loading loading-back"></div>
-    <script>
-        window.onload = async () => {
-            const loadings = document.querySelectorAll(".loading");
-
-            loadings[0].classList.add("loading-loaded");
-            await delay()
-            loadings[1].classList.add("loading-loaded");
-            await delay()
-            loadings[2].classList.add("loading-loaded");
-        }
-    
-        function delay() {
-            return new Promise(resolve => setTimeout(resolve, 70));
-        }
-    </script>
-    {% endif %}
-
     {{ content | safe }}
 </body>
 </html>
