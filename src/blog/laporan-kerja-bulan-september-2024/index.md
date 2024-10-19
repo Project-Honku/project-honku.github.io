@@ -1,6 +1,6 @@
 ---
 layout: page.njk
-pageTitle: Laporan bulanan hasil kerja Bulan Septmber Tahun 2024
+pageTitle: Laporan bulanan hasil kerja Bulan September Tahun 2024
 pageDescription: Needy Streamer Overload dan pemindahan status Sugar Sweet Temptation
 date: 2024-10-01
 writer: Aozora
