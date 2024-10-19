@@ -1,4 +1,5 @@
 ---
+layout: wip.njk
 tags: products
 code: ddlc
 title: Doki Doki Literature Club

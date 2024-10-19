@@ -1,4 +1,5 @@
 ---
+layout: wip.njk
 tags: products
 code: sst
 title: Sugar Sweet Temptation

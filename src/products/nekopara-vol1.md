@@ -1,4 +1,5 @@
 ---
+layout: wip.njk
 tags: products
 code: nekopara-vol1
 title: NEKOPARA Vol. 1
