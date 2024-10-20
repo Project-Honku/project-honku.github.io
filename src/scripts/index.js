@@ -1,5 +1,5 @@
 (() => {
-    new LazyLoad();
+    new LazyLoad({ restore_on_error: true });
 
     // FAQ sections
     const collapseable = document.querySelectorAll(".collapse");

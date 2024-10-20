@@ -3,7 +3,7 @@ layout: wip.njk
 tags: products
 code: sst
 title: Sugar Sweet Temptation
-language: ["🇯🇵", "🇺🇸"]
+publisher: Love Lab
 developer: Recette
 censored: true
 rating: 0

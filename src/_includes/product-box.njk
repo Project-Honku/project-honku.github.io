@@ -8,11 +8,8 @@
             <hr>
             
             <div class="small">
-                <span>Bahasa: </span>
-                {%- for bahasa in product.data.language -%}
-                    <span class="badge text-bg-dark">{{ bahasa }}</span>
-                    <span></span>
-                {%- endfor -%}
+                <span>Penerbit: </span>
+                <span class="badge bg-color-primary">{{ product.data.publisher }}</span>
                 <br>
 
                 <span>Rating: </span>
