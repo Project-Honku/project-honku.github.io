@@ -22,9 +22,9 @@ Karena kami tidak mengumpulkan informasi pribadi, kami tidak menggunakan atau me
 Website kami tidak menggunakan cookies atau teknologi serupa yang mengumpulkan informasi pribadi.
 
 #### 4. Pihak Ketiga
-Website kami dihosting oleh Github Pages dan Pixboost. Meskipun kami tidak mengumpulkan informasi pribadi,
-kebijakan privasi layanan pihak ketiga mungkin berbeda dari kebijakan kami.
-Kami menyarankan untuk meninjau kebijakan privasi mereka untuk informasi lebih lanjut.
+Meskipun kami tidak mengumpulkan informasi pribadi,
+kami menggunakan layanan pihak ketiga untuk kebutuhan layanan kami.
+Disarankan untuk meninjau kebijakan privasi mereka untuk informasi lebih lanjut.
 
 #### 5. Perubahan Kebijakan Privasi
 Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu.
@@ -52,9 +52,9 @@ Because we do not collect personal information, we do not use or share your pers
 Our website does not use cookies or similar technologies that collect personal information.
 
 #### 4. Third Parties
-Our website is hosted by Github Pages and Pixboost. Although we do not collect personal information,
-the privacy policies of third-party services may differ from ours.
-We recommend reviewing their privacy policies for more information.
+Although we do not collect personal information,
+we use third-party services for our service needs.
+It is recommended to review their privacy policies for more information.
 
 #### 5. Privacy Policy Changes
 We may update this privacy policy from time to time.
