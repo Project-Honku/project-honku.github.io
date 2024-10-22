@@ -3,11 +3,11 @@
         <img src="/public/img/banner-placeholder.webp" alt="placeholder">
         <!-- Gw lagi malas banget fix yang ini jadi gw pake workaround ini aja -->
         <a href="{{ product.url }}">
-            <img class="lazy position-absolute top-0 start-0 z-1" data-src="{% gotoCDN "/img/banners/" + product.data.code + ".webp" %}" alt="{{ product.data.title }}" height="100%">
+            <img class="lazy position-absolute top-0 start-0 z-1" data-src="{% gotoCDN "/img/banners/" + product.data.code + ".webp" %}" alt="{{ product.data.pageTitle }}" height="100%">
         </a>
         
         <a class="p-2 w-100 text-decoration-none text-black" href="{{ product.url }}">
-            <h5>{{ product.data.title }}</h5>
+            <h5>{{ product.data.pageTitle }}</h5>
             <span class="badge text-white bg-color-primary">{{ product.data.developer }}</span>
             <hr>
             
