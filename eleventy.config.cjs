@@ -14,8 +14,7 @@ module.exports = (config) => {
     config.addPassthroughCopy("src/CNAME");
 
     // Global Data
-    config.addGlobalData("cdn", "https://cdn.honku.my.id");
-
+    config.addShortcode("gotoCDN", (path) => "https://pixboost.com/api/2/img/https://cdn.honku.my.id" + path + "/optimise?auth=NDUyNzY3NzM3")
     config.addShortcode("gotoPro", (product) => "/products/" + product);
 
     // Filters

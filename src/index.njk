@@ -10,7 +10,7 @@ layout: head.njk
             {% for banner in index_banners %}
                 <a href="{% gotoPro banner.id %}" class="carousel-item {% if loop.first %} active {% endif %} position-relative top-placeholder-background">
                     <small class="position-absolute bottom-0 start-0 text-white rounded-top-end p-1 opacity-75 bg-black" style="font-size: 1vw;">{{ banner.text }}</small>
-                    <img src="/public/img/top-placeholder.webp" data-src="{{ cdn + banner.img }}" alt="{{ banner.id }}" class="d-block w-100 lazy">
+                    <img src="/public/img/top-placeholder.webp" data-src="{% gotoCDN banner.img %}" alt="{{ banner.id }}" class="d-block w-100 lazy">
                 </a>
             {% endfor %}
         </div>
