@@ -5,7 +5,7 @@ pageTitle: Kebijakan Privasi
 
 # Indonesia
 
-Terakhir diperbarui: 29 Juli 2024
+Terakhir diperbarui: 23 Oktober 2024
 
 Project Honku sangat menghargai privasi penggunanya.
 Halaman ini akan menjelaskan bagaimana kami menangani informasi anda ketika anda mengunjungi website kami.
@@ -22,8 +22,8 @@ Karena kami tidak mengumpulkan informasi pribadi, kami tidak menggunakan atau me
 Website kami tidak menggunakan cookies atau teknologi serupa yang mengumpulkan informasi pribadi.
 
 #### 4. Pihak Ketiga
-Website kami dihosting menggunakan Github Pages. Meskipun kami tidak mengumpulkan informasi pribadi,
-kebijakan privasi dari Github Pages mungkin berbeda dari kebijakan kami.
+Website kami dihosting oleh Github Pages dan Pixboost. Meskipun kami tidak mengumpulkan informasi pribadi,
+kebijakan privasi layanan pihak ketiga mungkin berbeda dari kebijakan kami.
 Kami menyarankan untuk meninjau kebijakan privasi mereka untuk informasi lebih lanjut.
 
 #### 5. Perubahan Kebijakan Privasi
@@ -35,7 +35,7 @@ Anda mungkin perlu memeriksa kebijakan privasi kami secara berkala untuk mengeta
 
 # English
 
-Last updated: July 29, 2024
+Last updated: October 23, 2024
 
 Project Honku highly values the privacy of its users.
 This page will explain how we handle your information when you visit our website.
@@ -52,8 +52,8 @@ Because we do not collect personal information, we do not use or share your pers
 Our website does not use cookies or similar technologies that collect personal information.
 
 #### 4. Third Parties
-Our website is hosted using Github Pages. Although we do not collect personal information,
-the privacy policy of Github Pages may differ from our policy.
+Our website is hosted by Github Pages and Pixboost. Although we do not collect personal information,
+the privacy policies of third-party services may differ from ours.
 We recommend reviewing their privacy policies for more information.
 
 #### 5. Privacy Policy Changes
