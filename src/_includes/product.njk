@@ -1,0 +1,54 @@
+---
+layout: head.njk
+---
+
+<link rel="stylesheet" href="/styles/product.css">
+{% include "navbar.njk" %}
+
+<header class="product-banner w-100 position-absolute top-0 lazy" data-bg="{% gotoCDN "/img/top/" + code + ".webp" %}"></header>
+
+<main class="container-xxl pt-4" style="min-height: 100%;">
+    <div class="container product-information d-sm-flex position-relative mb-5">
+        <img class="product-cover rounded-4 border border-color-primary" src="/public/img/banner-placeholder.webp" alt="{{ pageTitle }}">
+        <img class="product-cover absolute rounded-4 border border-color-primary lazy" data-src="{% gotoCDN "/img/banners/" + code + ".webp" %}" alt="{{ pageTitle }}">
+        <div class="ms-0 mt-4 mt-sm-0 ms-sm-4 d-flex flex-column justify-content-center">
+            <h1 class="text-color-primary fw-bold text-uppercase">{{ pageTitle }}</h1>
+            <div>
+                <span class="badge bg-color-primary">Pengembang: {{ developer }}</span><br>
+                <span class="badge bg-color-primary">Penerbit: {{ publisher }}</span><br>
+                <span class="badge bg-color-primary">Penerjemah: {{ translator }}</span><br>
+
+                {%- if rating >= 18 -%}
+                    <span class="badge text-bg-danger">{{ rating }}+</span>
+                {%- elif rating >= 14 -%}
+                    <span class="badge text-bg-warning">
+                        {{ rating }}+
+                        {%- if censored -%}
+                            &nbsp;(Versi Sensor)
+                        {%- endif -%}
+                    </span>
+                {%- elif rating >= 10 -%}
+                    <span class="badge text-bg-info">
+                        {{ rating }}+
+                        {%- if censored -%}
+                            &nbsp;(Versi Sensor)
+                        {%- endif -%}
+                    </span>
+                {%- else -%}
+                    <span class="badge text-bg-success">
+                        Semua Umur
+                        {%- if censored -%}
+                            &nbsp;(Versi Sensor)
+                        {%- endif -%}
+                    </span>
+                {%- endif -%}
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        
+    </div>
+</main>
+
+{% include "footer.njk" %}

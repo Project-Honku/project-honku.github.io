@@ -1,10 +1,11 @@
 ---
-layout: wip.njk
+layout: product.njk
 tags: products
 code: nso
-title: Needy Streamer Overload
+pageTitle: Needy Streamer Overload
 publisher: WSS playground
 developer: Xemono
+translator: Aozora (Project Honku)
 rating: 17
 status: 2
 ---

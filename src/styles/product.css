@@ -1,0 +1,35 @@
+.product-banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30%;
+    z-index: -1;
+}
+
+.product-information {
+    width: 100%;
+}
+
+.product-cover {
+    height: 250px;
+    width: auto;
+    box-shadow: #bc4848 7px 7px;
+}
+
+.product-cover.absolute {
+    margin-left: calc(var(--bs-gutter-x)* .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-banner::after {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(var(--bs-light-rgb), var(--bs-bg-opacity)));
+    pointer-events: none;
+}
