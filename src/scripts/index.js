@@ -2,7 +2,7 @@
     new LazyLoad({ restore_on_error: true });
 
     // FAQ sections
-    const collapseable = document.querySelectorAll(".collapse");
+    const collapseable = document.querySelectorAll(".collapse-faq");
     [...collapseable].forEach(collapseEl => {
         const plus = collapseEl.parentElement.querySelector(".faq-plus");
 

@@ -5,7 +5,9 @@ layout: head.njk
 <link rel="stylesheet" href="/styles/product.css">
 {% include "navbar.njk" %}
 
-<header class="product-banner w-100 position-absolute top-0 lazy" data-bg="{% gotoCDN "/img/top/" + code + ".webp" %}"></header>
+<header class="product-banner w-100 position-absolute top-0">
+    <img class="lazy" data-src="{% gotoCDN "/img/top/" + code + ".webp" %}" alt="Banner">
+</header>
 
 <main class="container-xxl pt-4" style="min-height: 100%;">
     <div class="container product-information d-sm-flex position-relative mb-5">
@@ -27,5 +29,7 @@ layout: head.njk
         
     </div>
 </main>
+
+<script src="/scripts/product.js"></script>
 
 {% include "footer.njk" %}
