@@ -17,7 +17,6 @@
 }
 
 .product-cover.absolute {
-    margin-left: calc(var(--bs-gutter-x)* .5);
     position: absolute;
     top: 0;
     left: 0;

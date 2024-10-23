@@ -10,6 +10,11 @@ footer a {
     color: #fff;
 }
 
+/* Padding container mending diapus */
+.container {
+    padding: 0;
+}
+
 .text-color-primary {
     color: #bc4848
 }
