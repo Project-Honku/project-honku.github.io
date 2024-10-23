@@ -17,30 +17,7 @@
                 <br>
 
                 <span>Rating: </span>
-                    {%- if product.data.rating >= 18 -%}
-                        <span class="badge text-bg-danger">{{ product.data.rating }}+</span>
-                    {%- elif product.data.rating >= 14 -%}
-                        <span class="badge text-bg-warning">
-                            {{ product.data.rating }}+
-                            {%- if product.data.censored -%}
-                                &nbsp;(Versi Sensor)
-                            {%- endif -%}
-                        </span>
-                    {%- elif product.data.rating >= 10 -%}
-                        <span class="badge text-bg-info">
-                            {{ product.data.rating }}+
-                            {%- if product.data.censored -%}
-                                &nbsp;(Versi Sensor)
-                            {%- endif -%}
-                        </span>
-                    {%- else -%}
-                        <span class="badge text-bg-success">
-                            SU
-                            {%- if product.data.censored -%}
-                                &nbsp;(Versi Sensor)
-                            {%- endif -%}
-                        </span>
-                    {%- endif -%}
+                {% addRating product.data.rating, product.data.censored %}
                 <br>
 
                 <span>Status: </span>

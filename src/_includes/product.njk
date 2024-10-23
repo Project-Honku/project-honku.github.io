@@ -18,30 +18,7 @@ layout: head.njk
                 <span class="badge bg-color-primary">Penerbit: {{ publisher }}</span><br>
                 <span class="badge bg-color-primary">Penerjemah: {{ translator }}</span><br>
 
-                {%- if rating >= 18 -%}
-                    <span class="badge text-bg-danger">{{ rating }}+</span>
-                {%- elif rating >= 14 -%}
-                    <span class="badge text-bg-warning">
-                        {{ rating }}+
-                        {%- if censored -%}
-                            &nbsp;(Versi Sensor)
-                        {%- endif -%}
-                    </span>
-                {%- elif rating >= 10 -%}
-                    <span class="badge text-bg-info">
-                        {{ rating }}+
-                        {%- if censored -%}
-                            &nbsp;(Versi Sensor)
-                        {%- endif -%}
-                    </span>
-                {%- else -%}
-                    <span class="badge text-bg-success">
-                        Semua Umur
-                        {%- if censored -%}
-                            &nbsp;(Versi Sensor)
-                        {%- endif -%}
-                    </span>
-                {%- endif -%}
+                {% addRating rating, censored, true %}
             </div>
         </div>
     </div>
