@@ -1,5 +1,5 @@
 ---
-layout: wip.njk
+layout: product.njk
 tags: products
 code: ddlc
 pageTitle: Doki Doki Literature Club

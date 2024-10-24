@@ -1,5 +1,5 @@
 ---
-layout: wip.njk
+layout: product.njk
 tags: products
 code: nekopara-vol1
 pageTitle: NEKOPARA Vol. 1

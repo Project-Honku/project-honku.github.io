@@ -18,15 +18,11 @@ layout: head.njk
             <div>
                 <span class="badge bg-color-primary">Pengembang: {{ developer }}</span><br>
                 <span class="badge bg-color-primary">Penerbit: {{ publisher }}</span><br>
-                <span class="badge bg-color-primary">Penerjemah: {{ translator }}</span><br>
+                <span class="badge bg-color-primary">Penerjemah: {{ translator or "TBA" }}</span><br>
 
                 {% addRating rating, censored, true %}
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        
     </div>
 </main>
 
